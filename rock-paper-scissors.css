@@ -2,34 +2,43 @@ body {
   background-color: rgb(25, 25, 25);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .game {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
   align-items: center;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
 }
 
 .choose-move {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .move-icon {
   height: 50px;
-
 }
 
 .move-button {
@@ -38,25 +47,34 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 60px;
-  margin-right: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.move-button:hover {
+  transform: scale(1.1);
 }
 
 .result {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .score {
-  margin-top: 60px;
+  font-size: 1.25rem;
+  margin-top: 20px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .reset-score-button,
@@ -64,7 +82,74 @@ body {
   background-color: rgb(158, 186, 66);
   border: 1px solid rgb(237, 237, 150);
   border-radius: 5px;
-  font-size: 15px;
-  padding: 8px 15px;
+  font-size: 1rem;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reset-score-button:hover,
+.auto-play-button:hover {
+  background-color: rgb(139, 164, 59);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .result {
+    font-size: 1.25rem;
+  }
+
+  .score {
+    font-size: 1rem;
+  }
+
+  .move-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+  }
+
+  .move-icon {
+    height: 40px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+
+  .score {
+    font-size: 0.875rem;
+  }
+
+  .move-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+  }
+
+  .move-icon {
+    height: 30px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
 }
