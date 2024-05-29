@@ -29,28 +29,23 @@ body {
   justify-content: center;
   gap: 30px;
   flex-wrap: nowrap;
-  /* Ensure icons do not wrap */
 }
 
 .title {
   font-size: 2.5rem;
-  /* Increased font size */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .move-icon {
   height: 70px;
-  /* Increased icon size */
 }
 
 .move-button {
   background-color: transparent;
   border: 3px solid white;
   width: 150px;
-  /* Increased button size */
   height: 150px;
-  /* Increased button size */
   border-radius: 75px;
   cursor: pointer;
   display: flex;
@@ -65,14 +60,12 @@ body {
 
 .result {
   font-size: 2rem;
-  /* Increased font size */
   font-weight: bold;
   margin-top: 20px;
 }
 
 .score {
   font-size: 1.75rem;
-  /* Increased font size */
   margin-top: 20px;
 }
 
@@ -90,9 +83,7 @@ body {
   border: 1px solid rgb(237, 237, 150);
   border-radius: 5px;
   font-size: 1.25rem;
-  /* Increased font size */
   padding: 12px 25px;
-  /* Increased padding */
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
@@ -106,73 +97,59 @@ body {
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
-    /* Increased font size */
   }
 
   .result {
     font-size: 2rem;
-    /* Increased font size */
   }
 
   .score {
     font-size: 1.75rem;
-    /* Increased font size */
   }
 
   .move-button {
     width: 130px;
-    /* Slightly smaller button size */
     height: 130px;
-    /* Slightly smaller button size */
     border-radius: 65px;
   }
 
   .move-icon {
     height: 65px;
-    /* Increased icon size */
   }
 
   .reset-score-button,
   .auto-play-button {
     padding: 10px 20px;
     font-size: 1.1rem;
-    /* Increased font size */
   }
 }
 
 @media (max-width: 480px) {
   .title {
     font-size: 2rem;
-    /* Increased font size */
   }
 
   .result {
     font-size: 1.75rem;
-    /* Increased font size */
   }
 
   .score {
     font-size: 1.5rem;
-    /* Increased font size */
   }
 
   .move-button {
     width: 110px;
-    /* Increased button size */
     height: 110px;
-    /* Increased button size */
     border-radius: 55px;
   }
 
   .move-icon {
     height: 60px;
-    /* Increased icon size */
   }
 
   .reset-score-button,
   .auto-play-button {
     padding: 10px 20px;
     font-size: 1rem;
-    /* Increased font size */
   }
 }
