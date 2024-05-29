@@ -28,25 +28,30 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* Ensure icons do not wrap */
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  /* Increased font size */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .move-icon {
-  height: 50px;
+  height: 70px;
+  /* Increased icon size */
 }
 
 .move-button {
   background-color: transparent;
   border: 3px solid white;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  width: 150px;
+  /* Increased button size */
+  height: 150px;
+  /* Increased button size */
+  border-radius: 75px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -59,13 +64,15 @@ body {
 }
 
 .result {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  /* Increased font size */
   font-weight: bold;
   margin-top: 20px;
 }
 
 .score {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  /* Increased font size */
   margin-top: 20px;
 }
 
@@ -82,8 +89,10 @@ body {
   background-color: rgb(158, 186, 66);
   border: 1px solid rgb(237, 237, 150);
   border-radius: 5px;
-  font-size: 1rem;
-  padding: 10px 20px;
+  font-size: 1.25rem;
+  /* Increased font size */
+  padding: 12px 25px;
+  /* Increased padding */
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
@@ -96,60 +105,74 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
   .title {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+    /* Increased font size */
   }
 
   .result {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    /* Increased font size */
   }
 
   .score {
-    font-size: 1rem;
+    font-size: 1.75rem;
+    /* Increased font size */
   }
 
   .move-button {
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
+    width: 130px;
+    /* Slightly smaller button size */
+    height: 130px;
+    /* Slightly smaller button size */
+    border-radius: 65px;
   }
 
   .move-icon {
-    height: 40px;
+    height: 65px;
+    /* Increased icon size */
   }
 
   .reset-score-button,
   .auto-play-button {
-    padding: 8px 15px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    /* Increased font size */
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    /* Increased font size */
   }
 
   .result {
-    font-size: 1rem;
+    font-size: 1.75rem;
+    /* Increased font size */
   }
 
   .score {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
+    /* Increased font size */
   }
 
   .move-button {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
+    width: 110px;
+    /* Increased button size */
+    height: 110px;
+    /* Increased button size */
+    border-radius: 55px;
   }
 
   .move-icon {
-    height: 30px;
+    height: 60px;
+    /* Increased icon size */
   }
 
   .reset-score-button,
   .auto-play-button {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    /* Increased font size */
   }
 }
